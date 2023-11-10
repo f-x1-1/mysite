@@ -1,0 +1,629 @@
+body {
+  margin: 0;
+  font-family: calibri, sans-serif;
+  background-color: #fff;
+  color: black;
+  height: 100%;
+}
+
+/* header */
+.header {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  width: 100%;
+  background-color: #255078;
+  z-index: 3;
+  position: relative;
+}
+
+.header ul {
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  background-color: #d4af37;
+  position: relative;
+}
+
+/*Nav-bar colour*/
+.header li a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-family: calibri, sans-serif;
+  font-size: 20px;
+}
+
+.header menu:active .header .menu-btu:active {
+  background-color: #ffffff;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #ffffff;
+  color: black;
+  font-size: 20px;
+}
+
+.header img {
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  width: 100%;
+}
+
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 500px;
+  text-align: center;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+  background: transparent;
+  display;
+  inline-block;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+  display: inline-block;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* Welcome Image on each page */
+.welcome img {
+  width: 100%;
+  margin-bottom: -23.8px;
+  height: auto;
+}
+
+/* Text on image  */
+.welcome {
+  /* this is for the overlayed text */
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  /* this is for the style of the text etc */
+  text-align: center;
+  color: white;
+  position: absolute;
+  font-size: 70px;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  padding: 10px;
+}
+
+.spacing {
+  padding: 20px;
+  text-align: center;
+  background-color: #2B3341;
+  color: white;
+}
+
+/*<-----------------------------content alignment------------------------------------ >*/
+/* Home Page content alignment */
+.home-wrapper {
+  width: 100%: background-color: #ddd;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-section {
+  width: 70%;
+  display: block;
+  margin: 20px auto;
+}
+
+.home-content h1 {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 3px solid #D4AF37;
+}
+
+.home-content p {
+  font-family: calibri, sans-serif;
+  padding-top: 15px;
+  color: #1elele;
+  font-size: 20px;
+  text-align: left;
+}
+
+.home-title h2 {
+  color: #1c1c1c;
+  font-family: calibri, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Gallery Page content alignment */
+.gallery-section {
+  width: 70%;
+  display: block;
+  margin: 20px auto;
+}
+
+.gallery-left-section {
+  width: 100%;
+  float: left;
+  padding-right: 50px;
+}
+
+.gallery-content {
+  text-align: justify;
+}
+
+.gallery-wrapper h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  border-bottom: 3px solid #c09b57;
+}
+
+/* Reference Page content alignment */
+.reference-wrapper {
+  width: 100%: background-color: #ddd;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.reference-section {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.reference-content h1 {
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 3px solid #D4AF37;
+}
+
+.reference-content p {
+  font-family: calibri, sans-serif;
+  padding-top: 15px;
+  color: #1elele;
+  font-size: 20px;
+  text-align: left;
+}
+
+.reference-title h2 {
+  margin-top: 40px;
+  color: #1c1c1c;
+  font-family: calibri, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Contact Page content alignment */
+.contact-wrapper {
+  width: 100%: min-height: 100vh;
+  overflow: hidden;
+}
+
+.contact-section {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: #333;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 40px;
+  border-bottom: 3px solid #c09b57;
+}
+
+.contact-section h2 {
+  text-align: left;
+  margin-top: auto;
+  color: #333;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.contact-section {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.contact-content {
+  text-align: justify;
+}
+
+.map-wrapper {
+  width: 100%;
+
+}
+
+.googlemap {
+  width: 100%;
+  box-shadow: 0 0 20px #000000b3;
+  height: 400px;
+}
+
+.main {
+  width: 380px;
+  height: 420px;
+  padding: 10px;
+  float: left;
+  background-color: #255078;
+}
+
+.mainTwo {
+  width: 380px;
+  height: 420px;
+  padding: 10px;
+  float: left;
+  background-color: #255078;
+}
+
+.mainTwo h2 {
+  color: #fff;
+}
+
+.mainTwo p {
+  color: #fff;
+}
+
+.mainThree {
+  width: 380px;
+  height: 420px;
+  padding: 10px;
+  float: left;
+  background-color: #255078;
+}
+
+.mainThree h2 {
+  color: #fff;
+}
+
+.mainThree p {
+  color: #fff;
+}
+
+.mainFour {
+  width: 380px;
+  height: 420px;
+  padding: 10px;
+  float: left;
+  background-color: #255078;
+}
+
+.mainFour h2 {
+  color: #fff;
+}
+
+.mainFour p {
+  color: #fff;
+}
+
+.mainFive {
+  width: 430px;
+  height: 420px;
+  padding: 10px;
+  float: left;
+  background-color: #255078;
+}
+
+.mainFive p {
+  color: #fff;
+}
+
+.mainMap {
+  width: 100%;
+  height: 530px;
+  padding: 10px;
+  float: left;
+  background-color: bbc;
+}
+
+/* about page content  alignment*/
+.about-wrapper {
+  width: 100%: min-height: 100vh;
+  overflow: hidden;
+}
+
+.about-section {
+  width: 60%;
+  display: block;
+  margin: 20px auto;
+}
+
+.left-section {
+  width: 100%;
+  float: left;
+  padding-right: 50px;
+}
+
+.about-content {
+  text-align: justify;
+}
+
+.about-image {
+  float: left;
+  width: 40%:
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-title h1 {
+  color: #1c1c1c;
+  font-family: calibri, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  border-bottom: 3px solid #D4AF37;
+}
+
+.about-content p {
+  font-family: calibri, sans-serif;
+  padding-top: 15px;
+  color: #1elele;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/*<-----------------------------content alignment end------------------------------------ >*/
+/* footer */
+body {
+  font-family: calibri, sans-serif;
+}
+
+:root {
+  --mycolor: rgb(255, 0, 140)
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: #255078;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 40px auto;
+}
+
+.text a {
+  color: #fff;
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+.address p {
+  font-size: 28px;
+}
+
+.list-footer {
+  margin: 40px auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.list-footer li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.list-footer li a:hover {
+  color: var(--mycolor);
+}
+
+.social-media {
+  margin: 20px auto;
+}
+
+.social-media i {
+  padding: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.social-media i:hover {
+  color: rgb(2, 255, 171);
+}
+
+@media(max-width:810px) {
+
+  .text, footer input[type='email'],
+  footer input[type='submit'] {
+    font-size: 20px;
+  }
+
+  .list-footer li a {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .social-media i {
+    padding: 10px;
+  }
+}
+
+@media(max-width:610px) {
+
+  .text, footer input[type='email'],
+  footer input[type='submit'] {
+    font-size: 14px;
+  }
+
+  .list-footer li a {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .social-media i {
+    font-size: 15px;
+  }
+}
+
+@media(max-width:470px) {
+  .text {
+    font-size: 12px;
+  }
+
+  .list-footer li a {
+    padding: 5px;
+  }
+}
+
+@media(max-width:330px) {
+  .text {
+    font-size: 10px;
+  }
+}
+
+/* Mobile View */
+@media (min-width: 48em) {
+  .header li {
+    display: inline-block;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+    display: inline-block;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    margin: auto;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .contact-form {
+      {
+      width: 25%;
+    }
+  }
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container2 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image2 {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon2 {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
